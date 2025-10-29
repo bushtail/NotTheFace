@@ -1,14 +1,16 @@
-﻿variables:
+variables:
   RELEASE_NAME: "NotTheFace"
   AUTHOR: "bushtail"
   DLL_NAME: "NotTheFace.dll"
   OUTPUT_DIR: "SPT/user/mods"
   VERSION: "1.0.0"
 
+
 stages:
   - build
   - package
   - release
+
 
 build:
   stage: build
