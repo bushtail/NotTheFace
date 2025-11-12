@@ -7,7 +7,7 @@ using SPTarkov.Server.Core.Servers;
 namespace NotTheFace;
 
 [UsedImplicitly]
-[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
+[Injectable(TypePriority = OnLoadOrder.PostSptModLoader + 1)]
 public class NotTheFace(DatabaseServer databaseServer, ISptLogger<NotTheFace> logger) : IOnLoad
 {
     public Task OnLoad()
